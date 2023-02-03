@@ -23,11 +23,14 @@ const MoviesList = () => {
 
   return (
     <>
+    <h1 className="text-center m-5">موقع الفنان بودااا بتاع المسرح للافلام الحصريه  </h1>
     <Row className="mt-3">
       {movies.length >= 1 ? (movies.map((mov) => {
         return (<CardMovie key={mov.id} mov={mov} />)
       })) : <h2 className="text-center p-5">There is No Movies Now Please Try Again Later </h2>}
+
       {movies.length >= 1 ? (<PaginationComponent />) : null}
+
     </Row>
     </>
   );
