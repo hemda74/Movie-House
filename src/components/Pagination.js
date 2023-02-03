@@ -28,12 +28,12 @@ const PaginationComponent = () => {
     return (
         <ReactPaginate
             breakLabel="..."
-            nextLabel="Next"
+            nextLabel="التالى"
             onPageChange={handlePageClick}
             marginPagesDisplayed={2}
             pageRangeDisplayed={2}
             pageCount={pageCount}
-            previousLabel="Previous"
+            previousLabel="السابق"
             containerClassName={"pagination justify-content-center p-3"}
             pageClassName={"page-item"}
             pageLinkClassName={"page-link"}

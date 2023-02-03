@@ -10,3 +10,8 @@ export const moviesReducer = (state = initalValue, action) => {
             return state;
     }
 }
+
+
+/* 
+dispatch({type:'AllMOVIES' , data:[]})
+*/

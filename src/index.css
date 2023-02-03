@@ -8,17 +8,12 @@ body {
 .nav-style {
   height: 90px;
   width: 1440px;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+  background-color: #b45b35;
 }
 
 .logo {
-  height: 50px;
-  width: 100px;
-  padding-bottom: 0;
+  height: 72px;
+  width: 78px;
 }
 
 .search {

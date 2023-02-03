@@ -8,7 +8,7 @@ const MovieDetails = () => {
 
     //get  movie by details 
     const getMovieDetails = async () => {
-        const res = await axios.get(`https://api.themoviedb.org/3/movie/${param.id}?api_key=52ef927bbeb21980cd91386a29403c78&language=en-US`)
+        const res = await axios.get(`https://api.themoviedb.org/3/movie/${param.id}?api_key=52ef927bbeb21980cd91386a29403c78&language=ar`)
         setMovie(res.data)
     }
     useEffect(() => {
@@ -26,16 +26,16 @@ const MovieDetails = () => {
                         />
                         <div className="justify-content-center text-center  mx-auto">
                             <p className="card-text-details border-bottom">
-                                Movie Name: {movie.title}
+                                اسم الفيلم: {movie.title}
                             </p>
                             <p className="card-text-details border-bottom">
-                                Movie Date :{movie.release_date}
+                                تاريخ الفيلم :{movie.release_date}
                             </p>
                             <p className="card-text-details border-bottom">
-                                Rated By  : {movie.vote_count}
+                                عدد المقيمين : {movie.vote_count}
                             </p>
                             <p className="card-text-details border-bottom">
-                                Rate :{movie.vote_average}
+                                التقييم :{movie.vote_average}
                             </p>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ const MovieDetails = () => {
                 <Col md="12" xs="12" sm="12" className="mt-1 ">
                     <div className="card-story  d-flex flex-column align-items-start">
                         <div className="text-end p-4 ">
-                            <p className="card-text-title border-bottom"> Overview </p>
+                            <p className="card-text-title border-bottom">القصة:</p>
                         </div>
                         <div className="text-end px-2">
                             <p className="card-text-story">{movie.overview}</p>
@@ -62,16 +62,16 @@ const MovieDetails = () => {
                     className="mt-2 d-flex justify-content-center ">
                     <Link to="/">
                         <button
-                            style={{ backgroundColor: "red", border: "none" }}
-                            className="btn btn-primary mx-2"> 
-                             Movie House
+                            style={{ backgroundColor: "#b45b35", border: "none" }}
+                            className="btn btn-primary mx-2">
+                            عوده للرئيسيه
                         </button>
                     </Link>
                     <a href={movie.homepage} >
                         <button
-                            style={{ backgroundColor: "red", border: "none" }}
+                            style={{ backgroundColor: "#b45b35", border: "none" }}
                             className="btn btn-primary">
-                                Watch Movie
+                            مشاهده الفيلم
                         </button>
                     </a>
                 </Col>
