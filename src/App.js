@@ -1,12 +1,8 @@
 import { Container } from "react-bootstrap";
-import React, { useEffect, useState } from 'react'
 import NavBar from "./components/NavBar";
 import MoviesList from "./components/MoviesList";
 import MovieDetails from './components/MovieDetails'
-import axios from 'axios'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux'
-
 function App() {
  
 

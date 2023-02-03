@@ -8,7 +8,7 @@ body {
 .nav-style {
   height: 90px;
   width: 1440px;
-  background-color: red;
+  background-color: rgb(230, 161, 161);
   display: flex;
   justify-content: center;
   align-items: center;
